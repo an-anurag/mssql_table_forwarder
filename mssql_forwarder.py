@@ -18,7 +18,7 @@ except ImportError:
     from query import start_query, main_query
 
 
-class KasperskyLogForwarder:
+class MSSQLForwarder:
     """
     Given database connection, fetch top record from table and forward it to UDP socket
     """
@@ -112,5 +112,5 @@ class KasperskyLogForwarder:
 
 
 if __name__ == '__main__':
-    kaspersky = KasperskyLogForwarder()
+    kaspersky = MSSQLForwarder()
     kaspersky.forward()
