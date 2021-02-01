@@ -97,7 +97,7 @@ class MSSQLForwarder:
                             )
 
                         # send to logger
-                        # self._send_to_logger(line=log)
+                        self._send_to_logger(line=log)
                         print(log)
 
                 else:
